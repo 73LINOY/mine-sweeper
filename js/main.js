@@ -1,5 +1,7 @@
 const FLAG = 'FLAG'
 const BOMB = 'BOMB'
+const FLOOR = 'FLOOR'
+
 
 const FLAG_IMG = '<img src="img/flag.jpg">'
 const BOMB_IMG = '<img src="img/bomb.jpg">'
