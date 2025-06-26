@@ -10,6 +10,7 @@ h1 {
 .board {
     width: 500px;
     margin: auto;
+    margin-top: 30px;
 }
 
 .board-table {
@@ -21,23 +22,49 @@ h1 {
     border: 1px solid black;
     width: 25px;
     height: 25px;
+    text-align: center;
+}
+
+.board-table td span.cell-bomb-count {
+    display: none;
 }
 
 .board-table td img {
     width: 25px;
     height: 25px;
     object-fit: cover;
+}
+
+.board-table td img.cell-flag {
+    width: 18px;
+    height: 18px;
+}
+
+.board-table td img.cell-bomb {
     display: none;
 }
 
 .board-table td.floor {
-    background-color: rgba(50,50,50,0.3);
-    box-shadow: 0 0 1px 3px rgba(0, 0, 0, 0.25) inset;
+    background-color: rgba(45, 43, 43, 0.3);
+    box-shadow: 0 0 1px 3px rgba(60, 60, 60, 0.25) inset;
 }
 
 
 div {
     font-size: 25px;
     text-align: center;
-    font-family: "Roboto Mono", monospace;
+    margin-top: 100px;
+    color: rgb(76, 72, 138);
+}
+
+.board-table td.revealed {
+    background-color: rgba(24, 24, 24, 0.1);
+}
+
+.board-table td.revealed span {
+    display: block;
+}
+
+.smiley{
+    margin-top: 50px;
 }

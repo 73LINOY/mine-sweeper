@@ -4,20 +4,24 @@
     <title> Mine Sweeper</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="app.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
 
 </head>
 <body onload="onInitGame()">
+        <div> Flags left: <span id="flags-left"></span></div>
+    <button class="smiley" onclick="restart()">😊</button>
 
-    <h1>Mine Sweeper</h1>
     <div class="board">
         <table class="board-table"></table>
-        <div> Flags left: <span id="flags-left"></span></div>
         <div id="result"> </div>
-    
-
     </div>
+
+    <div class="difficulty">
+        <button onclick="setDifficulty(4, 2)"> Beginner </button>
+        <button onclick="setDifficulty(8, 14)"> Medium </button>
+        <button onclick="setDifficulty(12, 32)"> Expert </button>
+    </div>
+
     <script src="js/unit.js"></script>
     <script src="js/main.js"></script>
 </body>
