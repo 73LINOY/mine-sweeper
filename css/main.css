@@ -1,27 +1,42 @@
-body{
+body {
     background-color: bisque;
     text-align: center;
 }
 
-h1{
+h1 {
     color: rgb(76, 72, 138);
 }
 
-.board{
+.board {
     width: 500px;
+    margin: auto;
 }
 
-.grid{
-    height: 400px;
-    width: 400px;
-    background-color: #dcd6dc;
-    margin-left: 50px;
-    margin-top: 20px;
-    border: 10px solid #dcd6dc;
-    margin-bottom: 10px;
+.board-table {
+    margin: auto;
+    border-collapse: collapse;
 }
 
-div{
+.board-table td {
+    border: 1px solid black;
+    width: 25px;
+    height: 25px;
+}
+
+.board-table td img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    display: none;
+}
+
+.board-table td.floor {
+    background-color: rgba(50,50,50,0.3);
+    box-shadow: 0 0 1px 3px rgba(0, 0, 0, 0.25) inset;
+}
+
+
+div {
     font-size: 25px;
     text-align: center;
     font-family: "Roboto Mono", monospace;
