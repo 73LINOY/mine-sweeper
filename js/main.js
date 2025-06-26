@@ -67,7 +67,7 @@ function setMines() {
     for (var i = 0; i < gBombCount; i++) {
         var randomI = getRandomInt(0, gSize)
         var randomJ = getRandomInt(0, gSize)
-        while(gBoard[randomI][randomJ].isRevealed) {
+        while(gBoard[randomI][randomJ].isRevealed && gBoard[randomI][randomJ].isMine) {
             randomI = getRandomInt(0, gSize)
             randomJ = getRandomInt(0, gSize)
         }
